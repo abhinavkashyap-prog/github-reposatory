@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <string.h>
+struct driver
+{
+ char name[45];
+ int driving_licence_number;
+ char route[100];
+ int kms;
+
+};
+
+void sheet (struct driver info, int count)
+{
+printf("\n");
+printf("driver.%d information here:-\n",count);
+printf("\n");
+
+printf("NAME:- %s\n",info.name);
+printf("DRIVING LICENCE NO:- %d",info.driving_licence_number);
+printf("\n");
+printf("ROUTE:- %s\n",info.route);
+printf("DISTANCE COVERED:- %d KMS",info.kms);
+printf("\n");
+}
+
+int main()
+{
+    struct driver driver1,driver2,driver3;
+    printf("driver.1 information here\n");
+    printf("please enter your name\n");
+    gets(driver1.name);
+    
+    printf("\n");
+
+    printf("enter your driving licence number\n");
+    scanf("%d",&driver1.driving_licence_number);
+    getchar(); 
+     printf("\n");
+     printf("enter your route of travelling\n");
+     gets(driver1.route);
+     
+     printf("\n");
+     printf("enter the distace covered in kilometers\n");
+     scanf("%d",&driver1.kms);
+     getchar();
+     printf("\n");
+
+
+
+     printf("driver.2 information here\n");
+    printf("please enter your name\n");
+    gets(driver2.name);
+    printf("\n");
+    printf("enter your driving licence number\n");
+    scanf("%d",&driver2.driving_licence_number);
+    getchar();
+     printf("\n");
+     printf("enter your route of travelling\n");
+     gets(driver2.route);
+     
+     printf("\n");
+     printf("enter the distace covered in kilometers\n");
+     scanf("%d",&driver2.kms);
+     getchar();
+     printf("\n");
+
+
+
+     printf("driver.3 information here\n");
+    printf("please enter your name\n");
+    gets(driver3.name);
+    printf("\n");
+    printf("enter your driving licence number\n");
+    scanf("%d",&driver3.driving_licence_number);
+    getchar();
+     printf("\n");
+     printf("enter your route of travelling\n");
+     gets(driver3.route);
+     
+     printf("\n");
+     printf("enter the distace covered in kilometers\n");
+     scanf("%d",&driver3.kms);
+     printf("\n");
+
+sheet(driver1,1);
+
+sheet(driver2,2);
+
+sheet(driver3,3);
+
+     
+    return 0;
+}
